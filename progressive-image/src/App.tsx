@@ -1,18 +1,17 @@
 import React from 'react';
 import './App.css';
 import ImageComp from './components/ImageComp';
-
-const images = [...new Array(20)];
+import images from './constants/images';
 
 function App() {
   return (
     <div className="App">
-      {images.map((_, idx) => (
+      {images.map((src, idx) => (
         <ImageComp
-          key={idx}
-          src="https://wallpaperaccess.com/full/817028.jpg"
-          alt="테스트용 이미지"
-          isProgressive
+          key={src}
+          src={src}
+          alt={`테스트용 이미지 - ${idx + 1}`}
+          // isProgressive
         />
       ))}
     </div>

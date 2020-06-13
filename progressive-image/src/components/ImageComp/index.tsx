@@ -14,19 +14,23 @@ const ImageComp: React.FC<Props> = ({
   isProgressive
 }) => {
   return (
-    <div>
+    <div className="image-comp-wrapper">
       {isProgressive ? (
         <LazyLoadImage
           src={src}
           alt={alt}
           effect="blur"
           width={800}
+          height={450}
         />
       ) : (
         <img
           src={src}
           alt={alt}
-          style={{width: '800px'}}
+          style={{
+            width: '800px',
+            height: '450px'
+          }}
         />
       )}
     </div>
