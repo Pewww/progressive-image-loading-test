@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ImageComp from './components/ImageComp';
+
+const images = [...new Array(20)];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {images.map((_, idx) => (
+        <ImageComp
+          key={idx}
+          src="https://wallpaperaccess.com/full/817028.jpg"
+          alt="테스트용 이미지"
+          isProgressive
+        />
+      ))}
     </div>
   );
 }
