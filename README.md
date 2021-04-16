@@ -14,36 +14,35 @@ Lazy Loading은 Request의 개수를 줄이는 방법들 중 하나로서, 초�
 
 **Network (Without Lazy-Loading)**
 
-![Lazy Loading이 적용되지 않은 Network 탭](https://user-images.githubusercontent.com/23455736/84564451-c469e880-ad9c-11ea-90ec-f963363ecdbb.png)
+<img src="https://user-images.githubusercontent.com/23455736/84564451-c469e880-ad9c-11ea-90ec-f963363ecdbb.png" alt="Lazy Loading이 적용되지 않은 Network 탭" width="800">
 
 **Network (Lazy-Loading)**
 
-![Lazy Loading이 적용된 Network 탭](https://user-images.githubusercontent.com/23455736/84564473-fbd89500-ad9c-11ea-92d2-211357d38376.png)
+<img src="https://user-images.githubusercontent.com/23455736/84564473-fbd89500-ad9c-11ea-92d2-211357d38376.png" alt="Lazy Loading이 적용된 Network 탭" width="800">
 
 요청하는 Request의 개수가 줄었다는 것은 분명 장점이라고 말 할 수 있지만, 그렇다고 페이지의 렌더링이 완료되는 시간에 있어서 항상 이점을 가진다는 얘기는 아니다.<br>
 특히나, 빠른 인터넷 환경에서는 리소스나 콘텐츠를 다운로드 받는 시간 역시 빠르기 때문에, Request의 개수 보다는 Layout, Painting 등의 작업들이 오히려 렌더링 시간에 더욱 큰 영향을 끼칠 수 있다는 얘기이다.
 
 **Performance (Without Lazy-Loading)**
 
-![Lazy Loading이 적용되지 않은 Performance 탭](https://user-images.githubusercontent.com/23455736/84564500-23c7f880-ad9d-11ea-9770-89dd697f745e.png)
-
+<img src="https://user-images.githubusercontent.com/23455736/84564500-23c7f880-ad9d-11ea-9770-89dd697f745e.png" alt="Lazy Loading이 적용되지 않은 Performance 탭" width="800">
 
 **Performance (Lazy-Loading)**
 
-![Lazy Loading이 적용된 Performance 탭](https://user-images.githubusercontent.com/23455736/84564516-42c68a80-ad9d-11ea-993e-c19259c590ff.png)
+<img src="https://user-images.githubusercontent.com/23455736/84564516-42c68a80-ad9d-11ea-993e-c19259c590ff.png" alt="Lazy Loading이 적용된 Performance 탭" width="800">
 
 
 인터넷 속도가 비교적 느린 Fast 3G 환경에서는 렌더링 속도의 차이가 확연히 드러났는데, 크게 수십배 까지 차이가 발생하였다.
 
+
 **Performace (Fast 3G, Without Lazy-Loading)**
 
-![Fast 3G 환경에서의 Lazy Loading이 적용되지 않은 Performance 탭](https://user-images.githubusercontent.com/23455736/84564538-6984c100-ad9d-11ea-911e-87a8515ceb66.png)
+<img src="https://user-images.githubusercontent.com/23455736/84564538-6984c100-ad9d-11ea-911e-87a8515ceb66.png" alt="Fast 3G 환경에서의 Lazy Loading이 적용되지 않은 Performance 탭" width="800">
 
 
 **Performance (Fast 3G, Lazy-Loading)**
 
-![Fast 3G 환경에서의 Lazy Loading이 적용된 Performance 탭](https://user-images.githubusercontent.com/23455736/84564570-920cbb00-ad9d-11ea-8d2c-decc6f3b1b08.png)
-
+<img src="https://user-images.githubusercontent.com/23455736/84564570-920cbb00-ad9d-11ea-8d2c-decc6f3b1b08.png" alt="Fast 3G 환경에서의 Lazy Loading이 적용된 Performance 탭">
 
 정리를 해보자면, Lazy Loading은 초기 렌더링 최적화를 위한 작업이라고 할 수 있다.<br>
 예시를 들었던 이미지 외의 API, Database, Component 등 여러 곳에도 Lazy Loading을 적용시킬 수 있다.
